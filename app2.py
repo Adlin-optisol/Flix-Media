@@ -36,7 +36,7 @@ def main():
 Comprehensive Feedback and Expectations Analysis for {user_query}
 
 Instructions for GPT Researcher:  
-1. Collect feedback from at least **5 different sources**, including **Reddit**, **Quora**, **Stack Overflow**, **Stack Exchange**, and other relevant public forums or online communities. Ensure you cover both positive and negative aspects of user feedback.  
+1. Collect feedback from at least **5 different sources**, maily from **Reddit**, **Quora**, **Stack Overflow**, and other relevant public forums or online communities. Ensure you cover both positive and negative aspects of user feedback.  
 2. Categorize the feedback into key areas:  
    - **Bugs/Frustrations**: Identify specific issues users face.  
    - **Positive Feedback**: Showcase what users appreciate and love about the product.  
@@ -72,7 +72,7 @@ At the end of the report, provide a section with **all individual sources** comp
 End the report with:    
 - Actionable recommendations for improving user experience or emphasizing positive feedback in marketing strategies.
 """
-                report_type = "detailed_research_report"
+                report_type = "research_report"
                 report, context, sources = asyncio.run(get_report(query, report_type))
 
                 # Display the results
